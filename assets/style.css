@@ -1,0 +1,95 @@
+/* SOME PRESETS */
+/* =================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+
+    /*(background)*/
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    /*(background)*/
+    --Light-royal-blue: hsl(241, 81%, 54%);
+
+    /* (circle) */
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    /* (circle) */
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+}
+
+:where(html, body) {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+:where(.result, .result-wrapper) {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+/* SOME PRESETS FINAL*/
+/* =================== */
+
+.container {
+    display: flex;
+    height: 400px;
+    width: 720px;
+}
+
+.container>div {
+    flex: 0 0 50%;
+    height: 100%;
+}
+
+.result-wrapper {
+    background: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    color: var(--White);
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px 0;
+    justify-content: space-around;
+}
+
+.result-wrapper .result {
+    background: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.result-wrapper .result h1 {
+    font-size: 56px;
+}
+
+.result-wrapper .result .of-100 {
+    color: var(--Light-lavender);
+}
+
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
